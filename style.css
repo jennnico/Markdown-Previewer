@@ -1,0 +1,35 @@
+$greige: rgb(242, 240, 234);
+$dark-greige: rgb(214, 211, 203);
+
+body{
+  text-align: center;
+  background-color: #f2eede;
+  color: #444444;
+}
+
+.headings{
+  font-family: 'Special Elite', cursive;
+  margin-top: 3rem;
+}
+
+#editor{
+  min-width: 35rem;
+  min-height: 10rem;
+  border: solid $dark-greige .4px;
+  border-radius: 5px;
+  padding: .5rem;
+  background-color: $greige;
+}
+
+#preview{
+  font-family: 'Questrial', sans-serif;
+  max-width: 45rem;
+  background-color: $greige;
+  margin : {
+    left: auto;
+    right: auto;
+    top: 1.5rem;
+  }
+  border: solid $dark-greige .4px;
+  border-radius: 5px;
+}
