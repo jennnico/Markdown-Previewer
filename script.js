@@ -8,21 +8,18 @@ class Previewer extends React.Component{
     };
   }
   
+  //Change h1 in the previewer using the editor
   changeHeading(heading){
     this.setState({ heading: heading});
   }
-  
-  handleChange(e){
-    const heading = e.target.value;
-    this.props.changeHeading(heading);
-  }
+
   
   render(){
     const {subheading} = this.state;
     return (
       <div>
         <h2 class="headings">Editor</h2>
-          <textarea id="editor" onChange={(event) => this.changeHeading(event.target.value)}></textarea>
+          <textarea id="editor" onChange={(event) => this.changeHeading(event.target.value)}>{this.state.heading}</textarea>
         <h2 class="headings">Previewer</h2>
         <div id="preview">
           <h1>{this.state.heading}</h1>
