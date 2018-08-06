@@ -1,3 +1,4 @@
+//Color Variables: regular and darge 'greige'
 $greige: rgb(242, 240, 234);
 $dark-greige: rgb(214, 211, 203);
 
@@ -7,11 +8,13 @@ body{
   color: #444444;
 }
 
+//Headings and subheadings
 .headings{
   font-family: 'Special Elite', cursive;
   margin-top: 3rem;
 }
 
+//Editor box
 #editor{
   min-width: 35rem;
   min-height: 10rem;
@@ -21,15 +24,18 @@ body{
   background-color: $greige;
 }
 
+//Preview box
 #preview{
   font-family: 'Questrial', sans-serif;
+  text-align: left;
   max-width: 45rem;
   background-color: $greige;
+  border: solid $dark-greige .4px;
+  border-radius: 5px;
+  //Nested CSS. Unnecessarry here, but I wanted the practice.
   margin : {
     left: auto;
     right: auto;
     top: 1.5rem;
   }
-  border: solid $dark-greige .4px;
-  border-radius: 5px;
 }
